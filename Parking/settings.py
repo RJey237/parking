@@ -22,7 +22,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-3)i$=7re=jdl&o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True  # Consider using `os.environ.get('DJANGO_DEBUG', 'True') == 'True'`
 
-ALLOWED_HOSTS = []  # Configure this properly for production!
+ALLOWED_HOSTS = ['RJey.pythonanywhere.com']  # Configure this properly for production!
 
 AUTH_USER_MODEL = 'userapp.CustomUser'
 
@@ -73,7 +73,7 @@ ROOT_URLCONF = 'Parking.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],  # Add a templates directory
+        'DIRS': [BASE_DIR / 'templates'], 
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
